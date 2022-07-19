@@ -974,6 +974,7 @@ label.footer-title {
 .accept-module:hover,
 .accept-module:focus {
     color: var(--logo-brand-color);
+    /* outline: 1px solid var(--logo-brand-color); */
     /* border: 1px solid var(--logo-brand-color); */
     /* border-radius: 4px; */
 }
@@ -995,6 +996,7 @@ label.footer-title {
 
 .accepting:focus,
 .accepting:hover {
+    /* outline: 1px solid var(--logo-brand-color); */
     /* border: 1px solid var(--logo-brand-color); */
     /* border-radius: 4px; */
 }
