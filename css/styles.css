@@ -525,16 +525,18 @@ footer .logo {
     margin-bottom: 20px;
 }
 
+.footer-address-decor {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
 .footer-contact-item:not(:last-child) {
     margin-bottom: 9px;
 }
 
 .footer-contact {
-    font-style: normal;
-    font-size: 14px;
-    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -567,6 +569,7 @@ footer .logo {
 .subscribe {
     display: flex;
     margin-left: 93px;
+    align-items: flex-end;
 }
 
 .subscribe-field {
@@ -579,6 +582,7 @@ label.footer-title {
 }
 
 .subscribe-field input {
+    
     width: 358px;
     
     padding: 15px 16px;
@@ -598,12 +602,10 @@ label.footer-title {
 }
 
 .subscribe-button-box {
-    position: relative;
     margin-left: 12px;
 }
 
 .subscribe-button {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -764,7 +766,7 @@ label.footer-title {
 }
 
 .card-item-title {
-    /* margin-bottom: 4px; - Григорій сказав прибрати, хоча в проєкті цей відступ є */
+    /* margin-bottom: 4px; - Григорій сказав прибрати, хоча в макеті цей відступ є */
 
     font-weight: 700;
     font-size: 18px;
@@ -832,8 +834,8 @@ label.footer-title {
     align-items: center;
     padding: 0;
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 8px;
+    right: 8px;
     width: 30px;
     height: 30px;
     
@@ -880,14 +882,18 @@ label.footer-title {
 .form-field-item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
 
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
-    color: var(--black);
+    color: var(--grey);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form-field-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
 
 .form-field-item input {
     padding: 12px 16px 12px 42px;
@@ -936,11 +942,17 @@ label.footer-title {
     line-height: 1.167;
 }
 
+.label {
+    display: block;
+    margin-bottom: 4px;
+}
+
 /* іконки на полях введення */
 .modal-box-icon {
     display: flex;
     flex-direction: column;
     position: relative;
+    color: var(--black);
 }
 
 .form-icon {
@@ -949,7 +961,8 @@ label.footer-title {
     height: 18px;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0 12px;
+    /* margin: 0 12px; */
+    left: 12px;
 
     fill: currentColor;
 }
@@ -994,12 +1007,12 @@ label.footer-title {
     line-height: 1.71;
 }
 
-.accepting:focus,
-.accepting:hover {
+/* .accepting:focus, */
+/* .accepting:hover { */
     /* outline: 1px solid var(--logo-brand-color); */
     /* border: 1px solid var(--logo-brand-color); */
     /* border-radius: 4px; */
-}
+/* } */
 
 /* коробка з іконкою - за замовчуванням без кольору */
 .icon-accept-box {
@@ -1034,6 +1047,10 @@ label.footer-title {
 
     /* якщо не задати бордер=0, то іконка лишається зменшеною */
     border: 0;
+}
+
+.checkboxed:focus+label .icon-checked {
+    outline: 1px solid black;
 }
 
 /* додаткова стилізація посилання на "Умови договору" */
